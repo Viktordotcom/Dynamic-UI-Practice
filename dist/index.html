@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="bundle.js" defer></script>
+    <title>Dynamic UI Practice</title>
+</head>
+<body>
+    <nav>
+    <div id="btn-open-menu" class="material-icons">add_circle_outline
+        <div class="menu-list">
+            <div class="dropdown">
+                <button class="dropbtn">Drop Down
+                    <div class="dropdown-content">
+                        <a target="_blank" href="https://github.com/Viktordotcom">My GitHub</a><a href="#">Link 1</a>
+                    </div>
+                </button>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Drop Down
+                    <div class="dropdown-content">
+                        <a href="#">Blabla</a><a href="#">Yada</a>
+                    </div>
+                </button>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Drop Down
+                    <div class="dropdown-content">
+                        <a href="#">Blabla</a><a href="#">Yada</a>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    </nav>
+    <div id="carousel-container">
+    <div id="carousel">
+        <button id="previous">
+                <span class="material-icons">
+                 navigate_before
+                </span>
+            </button>
+        <div class="image-frame">
+            <img data-n="0" class="visible"src="/images/lion.jpg" alt="">
+            <img data-n="1" src="../images/chimp.jpg" alt="chimpanzee"> 
+            <img data-n="2" src="../images/bald-eagle.jpg" alt="bald-eagle">
+            <img data-n="3" src="../images/prairie-dog.jpg" alt="prairie-dog">
+            <img data-n="4" src="../images/orangutan.jpg" alt="orangutan"> 
+        </div>
+        <button id="next">
+                <span class="material-icons">
+                 navigate_next
+                </span>
+            </button>
+    </div>
+
+    <p>Photos by Petr Ganaj from Pexels</p>
+    <div id="dots-container">
+    <div data-n="0" class="navigation-dots active"></div>
+    <div data-n="1" class="navigation-dots"></div>
+    <div data-n="2" class="navigation-dots"></div>
+    <div data-n="3" class="navigation-dots"></div>
+    <div data-n="4" class="navigation-dots"></div>
+    </div>
+    </div>
+</body>
+</html>
