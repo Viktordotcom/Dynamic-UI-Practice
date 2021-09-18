@@ -1,3 +1,4 @@
+import './dist/style.css'
 import { makeMobileMenu } from 'create-mobile-menu';
 import { makeDropDown } from 'create-dd-menu';
 const dropBtn = document.querySelectorAll('.dropbtn');
